@@ -34,8 +34,8 @@ Claim claimEmail = new Claim(ClaimTypes.Role, "macoratti@yahoo.com");
 Claim claimRole = new Claim(ClaimTypes.Role, "Admin");
 IList<Claim> Claims = new List<Claim>()
 {
-          claimName, claimEmail, claimRole
- };
+    claimName, claimEmail, claimRole
+};
 
  //Criando a Identidade
 ClaimsIdentity identity = new ClaimsIdentity(Claims, "Macoratti.net");
@@ -75,7 +75,8 @@ E podemos percorrer as claims ou declarações feitas usando o código a seguir:
 
 ```c#
 foreach (Claim ci in principal.Claims)
-      Console.WriteLine(ci.Value);
+    Console.WriteLine(ci.Value);
+    
 Console.WriteLine(principal.Identity.Name + " Pertence a role Admin ? \n" 
               + principal.IsInRole("Admin"));
 Console.ReadLine();
