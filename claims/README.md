@@ -40,3 +40,89 @@ IList<Claim> Claims = new List<Claim>()
  //Criando a Identidade
 ClaimsIdentity identity = new ClaimsIdentity(Claims, "Macoratti.net");
 ```
+
+Para criar as *claims* usamos a classe **ClaimTypes** que define constantes para os tipos de claim conhecidos que podem ser atribuídos a uma entidade.
+
+Após definir uma coleção de *claims* usamos **ClaimsIdentity** para criar a identidade com o nome 'Macoratti'.
+
+Agora para poder atribuir a identidade ao ambiente podemos usar a classe **ClaimsPrincipal**:
+
+```c#
+...
+ClaimsPrincipal principal = new ClaimsPrincipal(identity);
+
+Thread.CurrentPrincipal = principal;
+```
+
+Agora podemos obter a identidade e verificar se ele esta autenticado consultando a propriedade **IsAuthenticated** usando o código abaixo:
+
+```c#
+Console.WriteLine($"Identidade: {Thread.CurrentPrincipal.Identity.Name}\n");
+Console.WriteLine($"Usuário Autenticado: {Thread.CurrentPrincipal.Identity.IsAuthenticated}\n");
+Console.ReadLine();
+```
+
+Resultado:
+
+```ps
+Identidade: Macoratti
+Usuário Autenticado: True
+```
+
+Podemos criar uma identidade usando diretamente a classe ClaimsIdentity:
+
+E podemos percorrer as claims ou declarações feitas usando o código a seguir:
+
+```c#
+foreach (Claim ci in principal.Claims)
+      Console.WriteLine(ci.Value);
+Console.WriteLine(principal.Identity.Name + " Pertence a role Admin ? \n" 
+              + principal.IsInRole("Admin"));
+Console.ReadLine();
+```
+
+Resultado:
+
+```ps
+Identidade: Macoratti
+
+Usuário Autenticado: True
+
+Macoratti
+macoratti@yahoo.com
+Admin
+
+Macoratti Pertence a role Admin ?
+True
+```
+
+Observe que podemos verificar se o usuário faz parte de uma determinar role ou perfil.
+
+```c#
+principal.IsInRole("Admin")
+```
+
+E para percorrer cada claim na coleção das declarações usamos o laço foreach:
+
+```c#
+foreach (Claim ci in principal.Claims)
+    Console.WriteLine(ci.Value);
+```    
+
+Como todas as classes principal derivam da classe base **ClaimsPrincipal**, dessa forma é possível acessar claims ou declarações dos usuários usando a propriedade Claims de um objeto principal.
+
+Além disso podemos testar se uma claim está disponível, usando o método HasClaim :
+
+```c#
+bool TemNome = identity.HasClaim (c => c.Type == ClaimTypes.Name);
+```
+
+E também podemos recuperar claims específicas, usando o método **FindAll** usando um predicado para definir uma correspondência:
+
+```c#
+var groupClaims = identity.FindAll (c => c.Type == ClaimTypes.GroupSid);
+```
+
+Esses conceitos são importantes e são muito usados em aplicações ASP .NET Core.
+
+
