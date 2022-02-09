@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NKAgWvIyIm+kobp5wsGfAnoPtTfHDBrMGhbvR/KmA1B2lPI49u0JlzOmYYhyEg2XnzyGOYunHspOBcnCi/2ytw==",
+  "success": true,
+  "projectFilePath": "C:\\DEV\\C#\\claims\\Claims.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marce\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+  ],
+  "logs": []
+}
