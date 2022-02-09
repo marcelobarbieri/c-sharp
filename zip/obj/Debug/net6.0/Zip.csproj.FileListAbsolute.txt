@@ -1,0 +1,15 @@
+C:\DEV\C#\zip\bin\Debug\net6.0\Zip.exe
+C:\DEV\C#\zip\bin\Debug\net6.0\Zip.deps.json
+C:\DEV\C#\zip\bin\Debug\net6.0\Zip.runtimeconfig.json
+C:\DEV\C#\zip\bin\Debug\net6.0\Zip.dll
+C:\DEV\C#\zip\bin\Debug\net6.0\ref\Zip.dll
+C:\DEV\C#\zip\bin\Debug\net6.0\Zip.pdb
+C:\DEV\C#\zip\obj\Debug\net6.0\Zip.csproj.AssemblyReference.cache
+C:\DEV\C#\zip\obj\Debug\net6.0\Zip.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\C#\zip\obj\Debug\net6.0\Zip.AssemblyInfoInputs.cache
+C:\DEV\C#\zip\obj\Debug\net6.0\Zip.AssemblyInfo.cs
+C:\DEV\C#\zip\obj\Debug\net6.0\Zip.csproj.CoreCompileInputs.cache
+C:\DEV\C#\zip\obj\Debug\net6.0\Zip.dll
+C:\DEV\C#\zip\obj\Debug\net6.0\ref\Zip.dll
+C:\DEV\C#\zip\obj\Debug\net6.0\Zip.pdb
+C:\DEV\C#\zip\obj\Debug\net6.0\Zip.genruntimeconfig.cache
