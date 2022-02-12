@@ -1,0 +1,15 @@
+C:\DEV\C#\parse\bin\Debug\net6.0\Parse.exe
+C:\DEV\C#\parse\bin\Debug\net6.0\Parse.deps.json
+C:\DEV\C#\parse\bin\Debug\net6.0\Parse.runtimeconfig.json
+C:\DEV\C#\parse\bin\Debug\net6.0\Parse.dll
+C:\DEV\C#\parse\bin\Debug\net6.0\ref\Parse.dll
+C:\DEV\C#\parse\bin\Debug\net6.0\Parse.pdb
+C:\DEV\C#\parse\obj\Debug\net6.0\Parse.csproj.AssemblyReference.cache
+C:\DEV\C#\parse\obj\Debug\net6.0\Parse.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\C#\parse\obj\Debug\net6.0\Parse.AssemblyInfoInputs.cache
+C:\DEV\C#\parse\obj\Debug\net6.0\Parse.AssemblyInfo.cs
+C:\DEV\C#\parse\obj\Debug\net6.0\Parse.csproj.CoreCompileInputs.cache
+C:\DEV\C#\parse\obj\Debug\net6.0\Parse.dll
+C:\DEV\C#\parse\obj\Debug\net6.0\ref\Parse.dll
+C:\DEV\C#\parse\obj\Debug\net6.0\Parse.pdb
+C:\DEV\C#\parse\obj\Debug\net6.0\Parse.genruntimeconfig.cache
