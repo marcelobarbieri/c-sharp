@@ -15,9 +15,11 @@ Console.WriteLine(valor3); // 01/01/2022 00:00:00
 var valor4 = DateTime.Parse("28/10/2022");
 Console.WriteLine(valor4);
 
-var culture = new CultureInfo("en-US");
-Console.WriteLine(culture); // pt-BR
-var valor5 = DateTime.Parse("10/28/2022", culture);
+Console.WriteLine(Thread.CurrentThread.CurrentCulture.Name);
+
+var culture2 = new CultureInfo("en-US");
+Console.WriteLine(culture2); // pt-BR
+var valor5 = DateTime.Parse("10/28/2022", culture2);
 Console.WriteLine(valor5);
 
 // NumberStyles
