@@ -144,3 +144,5 @@ As tuplas são um tipo de referência (ou valor no caso dos **ValueTuple**) que 
 ## Referências
 
 - [Balta.io](https://balta.io/blog/csharp-tuple)
+
+- [Microsoft Docs](https://docs.microsoft.com/pt-br/dotnet/api/system.tuple?view=net-6.0)
