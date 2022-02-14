@@ -35,15 +35,15 @@ namespace Claims
                 {
                     await context.Response.WriteAsync("Hello World!");
 
-                    ClaimsPrincipal principal = HttpContext.User as ClaimsPrincipal;
-                    if (null != principal)
-                    {
-                        foreach (Claim claim in principal.Claims)
-                        {
-                            Console.Write("CLAIM TYPE: " + claim.Type + "; CLAIM VALUE: " + claim.Value + "</br>");
-                        }
+                    // ClaimsPrincipal principal = HttpContext.User as ClaimsPrincipal;
+                    // if (null != principal)
+                    // {
+                    //     foreach (Claim claim in principal.Claims)
+                    //     {
+                    //         Console.Write("CLAIM TYPE: " + claim.Type + "; CLAIM VALUE: " + claim.Value + "</br>");
+                    //     }
 
-                    }
+                    // }
                 });
             });
         }
