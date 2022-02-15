@@ -2,7 +2,7 @@
 
 > [Claims](https://github.com/marcelobarbieri/c-sharp/tree/main/claims)
 
-> Deconstruct
+> [Deconstruct](https://github.com/marcelobarbieri/c-sharp/tree/main/deconstruct)
 
 > Parse
 
