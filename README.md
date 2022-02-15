@@ -4,7 +4,7 @@
 
 > [Deconstruct](https://github.com/marcelobarbieri/c-sharp/tree/main/deconstruct)
 
-> Parse
+> [Parse](https://github.com/marcelobarbieri/c-sharp/tree/main/parse)
 
 > Tuplas
 
