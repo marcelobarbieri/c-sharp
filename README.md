@@ -6,6 +6,6 @@
 
 > [Parse](https://github.com/marcelobarbieri/c-sharp/tree/main/parse)
 
-> Tuplas
+> [Tuplas](https://github.com/marcelobarbieri/c-sharp/tree/main/tuplas)
 
 > Zip
