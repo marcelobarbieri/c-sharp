@@ -8,7 +8,7 @@
 
 > [Parse](https://github.com/marcelobarbieri/c-sharp/tree/main/parse)
 
-> [String, System.String e String Builder no C#](https://github.com/marcelobarbieri/c-sharp/tree/main/string)
+> [String, System.String e String Builder](https://github.com/marcelobarbieri/c-sharp/tree/main/string)
 
 > [Tuplas](https://github.com/marcelobarbieri/c-sharp/tree/main/tuplas)
 
