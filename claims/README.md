@@ -1,9 +1,3 @@
-<style>
-    span {
-        color: powderblue;
-    }
-</style>
-
 # Claims
 
 Traduzido por "declarações"
