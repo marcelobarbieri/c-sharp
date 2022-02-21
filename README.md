@@ -4,7 +4,11 @@
 
 > [Deconstruct](https://github.com/marcelobarbieri/c-sharp/tree/main/deconstruct)
 
+> [Operadores AS e IS](https://github.com/marcelobarbieri/c-sharp/tree/main/operators-as-is)
+
 > [Parse](https://github.com/marcelobarbieri/c-sharp/tree/main/parse)
+
+> [String, System.String e String Builder no C#](https://github.com/marcelobarbieri/c-sharp/tree/main/string)
 
 > [Tuplas](https://github.com/marcelobarbieri/c-sharp/tree/main/tuplas)
 
