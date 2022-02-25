@@ -126,6 +126,8 @@ Alguns parâmetros substituem o comportamento de outros?
 
 Percebeu como algo que parece ser simples pode levar a problemas nos pequenos detalhes.
 
+</details>
+
 ## Contornando o problema da obsessão por primitivos
 
 Então qual seria a solução para evitar tais problemas?
