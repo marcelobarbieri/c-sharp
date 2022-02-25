@@ -23,7 +23,8 @@ Motivações:
 
 ## Os problemas causados pela obsessão por primitivos
 
-### 1. Intercambiáveis
+<details>
+    <summary>1. Intercambiáveis</summary>
 
 Um dos principais problemas com a obsessão por tipos primitivos é que **os valores do mesmo tipo podem ser substituídos uns pelos outros** sem quebrar o compilador, mesmo que sejam duas coisas diferentes. Por exemplo, um número de telefone e um nome são dois conceitos separados e não devem ser representados como strings.
 
@@ -93,7 +94,10 @@ Perceba que agora 'Maria' será atribuída à propriedade Telefone e o telefone 
 
 Assim o resultado pode ser uma catástrofe em produção dependendo do tipo de aplicação e do cenário.
 
-### 2- Ferem o princípio DRY
+</details>
+
+<details>
+    <summary>2. Ferem o princípio DRY</summary>
 
 Como o nome diz, os tipos primitivos são primitivos, o que significa que eles não contêm lógica.
 
@@ -103,7 +107,10 @@ Pode parecer bom nas primeiras vezes que você tem que fazer isso, mas com o tem
 
 Isso levará a uma base de código que é muito difícil de manter e que viola diretamente o princípio **Don't Repeat Yourself (DRY)**.
 
-### 3- Levam os métodos a terem uma assinatura difícil de entender
+</details>
+
+<details>
+    <summary>3. Levam os métodos a terem uma assinatura difícil de entender</summary>
 
 Com certeza você já viu métodos assim:
 
