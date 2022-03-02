@@ -103,7 +103,72 @@ finally
 // ------------------------------------------------------------------------------------------ Serilog <<<
 ```
 
+Neste código estamos habilitando a leitura do arquivo **appsettings.json** pois nele vamos criar as definições dos logs que desejamos criar. Para isso o **Serilog** vai ter que ler o arquivo **appsettings.json** para obter as definições e criar os respectivos logs.
+
+A seguir vamos criar o **logger raiz** usando o **LoggerConfiguration** e para isso usamos uma instancia de **LoggerConfiguration** e a partir das informações obtidas no arquivo **appsettings.json** criamos um **logger** usando as **sinks**, os **enrichers** e as demais definições do arquivo **appsettings.json**.
+
+A seguir definimos o **Serilog** como provedor de log ao invés de usar o recurso padrão da plataforma .NET.
+
 </details>
+
+## Definindo as configurações dos logs no arquivo appsettins.json
+
+Agora precisamos definir as configurações dos logs no arquivo **appsettings.json**. Vamos criar logs no console, em arquivos e em um banco de dados e para isso vamos usar o código a seguir:
+
+```json
+{
+  "AllowedHosts": "*",
+  "Serilog": {
+    "Using": [],
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning",
+        "System": "Warning"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "Console"
+      },
+      {
+        "Name": "File",
+        "Args": {
+          "path": "C:\\Dados\\Logs\\log.txt",
+          "outputTemplate": "{Timestamp} {Message}{NewLine:1}{Exception:1}"
+        }
+      },
+      {
+        "Name": "File",
+        "Args": {
+          "path": "C:\\Dados\\Logs\\log.json",
+          "formatter": "Serilog.Formatting.Json.JsonFormatter, Serilog"
+        }
+      },
+      {
+        "Name": "MSSqlServer",
+        "Args": {
+          "connectionString": "Data .. .Initial Catalog=DemoSerilogDB;Integrated Security=True",
+          "sinkOptionsSection": {
+            "tableName": "Logs",
+            "autoCreateSqlTable": true
+          },
+          "restrictedToMinimumLevel": "Warning"
+        }
+      }
+    ],
+    "Enrich": [
+      "FromLogContext",
+      "WithMachineName",
+      "WithProcessId",
+      "WithThreadId"
+    ],
+    "Properties": {
+      "ApplicationName": "Serilog.WebAPI"
+    }
+  }
+}
+```
 
 # Referências
 
