@@ -1,17 +1,21 @@
 # C#
 
-> [Action e Action Chaining](https://github.com/marcelobarbieri/c-sharp/tree/main/action)
+> [Action e Action Chaining](./action/)
 
-> [Claims](https://github.com/marcelobarbieri/c-sharp/tree/main/claims)
+> [Claims](./claims/)
 
-> [Deconstruct](https://github.com/marcelobarbieri/c-sharp/tree/main/deconstruct)
+> [Deconstruct](./deconstruct/)
 
-> [Operadores AS e IS](https://github.com/marcelobarbieri/c-sharp/tree/main/operators-as-is)
+> [Obsessão por tipos primitivos (primitive obsession)](./primitive-obsession/)
 
-> [Parse](https://github.com/marcelobarbieri/c-sharp/tree/main/parse)
+> [Operadores AS e IS](./operators-as-is/)
 
-> [String, System.String e String Builder](https://github.com/marcelobarbieri/c-sharp/tree/main/string)
+> [Parse](./parse/)
 
-> [Tuplas](https://github.com/marcelobarbieri/c-sharp/tree/main/tuplas)
+> [Serilog: Criando logs para console, arquivo e banco de dados](./serilog)
 
-> [Zip](https://github.com/marcelobarbieri/c-sharp/tree/main/zip)
+> [String, System.String e String Builder](./string/)
+
+> [Tuplas](./tuplas/)
+
+> [Zip](./zip/)
