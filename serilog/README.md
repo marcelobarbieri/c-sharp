@@ -115,6 +115,8 @@ A seguir definimos o **Serilog** como provedor de log ao invés de usar o recurs
 
 Agora precisamos definir as configurações dos logs no arquivo **appsettings.json**. Vamos criar logs no console, em arquivos e em um banco de dados e para isso vamos usar o código a seguir:
 
+<details><summary>AppSettings.json</summary>
+
 ```json
 {
   "Logging": {
@@ -181,6 +183,8 @@ Agora precisamos definir as configurações dos logs no arquivo **appsettings.js
 }
 ```
 
+</details>
+
 Criamos a seção **Serilog** no arquivo e a seguir usando o método **WriteTo** definimos 3 tipos de log:
 
 1. Console
@@ -205,7 +209,7 @@ Para criar o log para o banco de dados SQL Server informamos a string de conexã
 
 Assim, agora podemos definir o registro dos logs no controlador WeatherForecast criado por padrão.
 
-Controllers/WeatherForecastController.cs
+<details><summary>Controllers/WeatherForecastController.cs</summary>
 
 ```c#
 using Microsoft.AspNetCore.Mvc;
@@ -270,6 +274,8 @@ namespace SerilogLearning.Controllers
 }
 ```
 
+</details>
+
 No método **Get** do **controller WeatherForecast** incluímos alguns registros de eventos para o nível **information** e **error**.
 
 Para executar o projeto selecione o projeto **Serilog_Demo** e execute. Veremos a interface do **swagger** exibir o **endpoint GET** que quando acionado irá executar o método GET do controller.
@@ -282,11 +288,15 @@ Teremos o resultado abaixo:
 
 Agora vamos verificar os logs gerados:
 
-1. Console
+<details><summary>1. Console</summary>
 
 ![Console](./Assets/excecao-aleatoria-console.png)
 
-2. Os arquivos **log.txt** e **log.json** na pasta **C:\DEV\C#\serilog\Learning\SerilogLearning\Logs**
+</details>
+
+<details><summary>2. Arquivos</summary>
+
+Os arquivos **log.txt** e **log.json** na pasta **C:\DEV\C#\serilog\Learning\SerilogLearning\Logs**
 
 ![Gerenciador de Soluções](./Assets/excecao-aleatoria-logs-gs.png)
 
@@ -473,9 +483,15 @@ System.Exception: Ocorreu uma Exception Aleatória...
 
 </details>
 
-3. O log no banco de dados DemoSerilogDB onde foi criada a tabela Logs com o conteúdo abaixo:
+</details>
+
+<details><summary>3. Banco de Dados</summary>
+
+O log no banco de dados DemoSerilogDB onde foi criada a tabela Logs com o conteúdo abaixo:
 
 ![Banco de Dados](./Assets/excecao-aleatoria-logs-bdados.png)
+
+</details>
 
 Vimos assim como foi fácil criar logs definindo as configurações no arquivo **appsettings.json** usando o **Serilog**.
 
