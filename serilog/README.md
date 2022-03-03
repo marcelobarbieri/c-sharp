@@ -18,6 +18,8 @@ Recursos usados:
 
 ## Criando a Web API ASP .NET Core
 
+<details><summary>Criação do Projeto</summary>
+
 ![Criar Projeto](./Assets/criar-projeto.png)
 
 ![Selecionar Modelo](./Assets/selecionar-modelo.png)
@@ -25,6 +27,8 @@ Recursos usados:
 ![Configurar Projeto](./Assets/configurar-projeto.png)
 
 ![Informações Adicionais](./Assets/info-adicionais.png)
+
+</details>
 
 A seguir vamos incluir os seguintes pacotes do Serilog em nosso projeto:
 
@@ -282,9 +286,13 @@ Para executar o projeto selecione o projeto **Serilog_Demo** e execute. Veremos 
 
 Teremos o resultado abaixo:
 
+<details><summary>Resultado</summary>
+
 ![Exceção aleatória](./Assets/excecao-aleatoria.png)
 
 ![Swagger](./Assets/excecao-aleatoria-swagger.png)
+
+</details>
 
 Agora vamos verificar os logs gerados:
 
