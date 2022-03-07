@@ -16,6 +16,8 @@
 
 > [String, System.String e String Builder](./string/)
 
+> [TimeZone](./timezone/README.md)
+
 > [Tuplas](./tuplas/)
 
 > [Zip](./zip/)
