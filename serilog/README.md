@@ -1,10 +1,27 @@
 # Serilog : Criando logs para console, arquivo e banco de dados
 
-Neste artigo voltamos a tratar com o **Serilog** uma biblioteca para registro de diagnósticos, e log para arquivos, e veremos como criar registro de eventos via console, em arquivos texto e json e em um banco de dados SQL Server.
+O **Serilog** é uma biblioteca para log de informações de qualquer aplicação .NET que trabalha com **Sinks** como base. Uma estrutura que permite salvar quaisquer tipos de informação, de forma organizada, durante a execução da aplicação.
 
-O **Serilog** é uma biblioteca que você pode usar em aplicações .NET para realizar o logging. Ela é simples, fácil de configurar, tem uma API limpa e é portátil entre plataformas .NET recentes.
+## Sinks
 
-Eu já apresentei o **Serilog** e mostrei como usar alguns dos seus recursos neste artigo: [C# - Usando o Serilog](http://www.macoratti.net/18/05/c_serilog1.htm)
+O **Serilog** possui apenas a implementação básica dos logs.
+Os **Sinks** permitem escrever logs em arquivo, e-mails, Discord etc.
+
+**Sink.File**
+**Sink.Email**
+**Sink.Discord**
+
+Também é possível criar **Sink** customizado.
+
+## Exemplos:
+
+<details><summary>Startup</summary>
+
+</details>
+
+<details><summary>AppSettings</summary>
+
+## Criando a Web API ASP .NET Core
 
 Neste artigo veremos como criar logs para console, arquivos e para um banco de dados SQL Server de forma bem simples usando o **Serilog**.
 
@@ -15,8 +32,6 @@ Recursos usados:
 - .NET Core SDK 5.0
 - Visual Studio 2019 16.9.3
 - Bibliotecas Serilog
-
-## Criando a Web API ASP .NET Core
 
 <details><summary>Criação do Projeto</summary>
 
@@ -503,6 +518,10 @@ O log no banco de dados DemoSerilogDB onde foi criada a tabela Logs com o conte�
 
 Vimos assim como foi fácil criar logs definindo as configurações no arquivo **appsettings.json** usando o **Serilog**.
 
+</details>
+
 # Referências
+
+> [Balta.io](https://balta.io/blog/aspnet-serilog)
 
 > [Macoratti](http://www.macoratti.net/21/04/c_serilog1.htm)
