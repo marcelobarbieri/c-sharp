@@ -17,6 +17,107 @@ Também é possível criar **Sink** customizado.
 
 <details><summary>Startup</summary>
 
+Criação do projeto
+
+```ps
+dotnet new webapi -o . -n Startup
+```
+
+Instalação do pacote
+
+```ps
+dotnet add package Serilog.AspNetCore
+```
+
+Inserir o comando **UseSerilog** no **Host** da aplicação
+
+```c#
+using Serilog;
+builder.Host.UseSerilog();
+```
+
+### Log no Console
+
+Configurar o método **WriteTo** apontando para **Console**
+
+```c#
+using Serilog.Events;
+builder.Host.UseSerilog((ctx,lc) => lc
+  .WriteTo.Console(LogEventLevel.Debug));
+```
+
+**LogEventLeven.Debug** indica que somente as mensagens de **Debug** serão logadas no **Console**.
+
+> Eventos
+
+![Eventos](./Assets/log-eventos.png)
+
+> Start
+
+![Log Console](./Assets/log-console.png)
+
+### Mensagens customizadas
+
+Para mensagens customizadas pode-se utilizar o **Log** do namespace **Serilog** informando o tipo da mensagem e texto desejado.
+
+```c#
+using Serilog;
+
+Log.Error("Mensagem de erro");
+Log.Information("Mensagem de informação");
+Log.Fatal("Erro fatal");
+Log.Debug("Mensagem de Debug");
+Log.Warning("Mensagem de Warning");
+```
+
+### Log no E-mail
+
+Adicionar **Sink**
+
+```ps
+dotnet add package Serilog.Sinks.Email
+```
+
+```c#
+using Serilog.Sinks.Email;
+using System.Net;
+builder.Host.UseSerilog((ctx, lc) => lc
+  .WriteTo.Console(LogEventLevel.Debug)
+  .WriteTo.Email(new EmailConnectionInfo
+   {
+       Port = 587,
+       EmailSubject = "TESTE",
+       EnableSsl = true,
+       FromEmail = "hello@balta.io",
+       MailServer = "smtp.sendgrid.net",
+       NetworkCredentials = new NetworkCredential("apikey", "pwd"),
+       ToEmail = "hello@balta.io",
+       IsBodyHtml = true
+   }));
+```
+
+### Log no Arquivo
+
+Adicionar **Sink**
+
+```ps
+dotnet add package Serilog.Sinks.File
+```
+
+```c#
+using Serilog.Sinks.Email;
+using System.Net;
+builder.Host.UseSerilog((ctx, lc) => lc
+  .WriteTo.Console(LogEventLevel.Debug)
+  .WriteTo.File("log.txt",
+        LogEventLevel.Warning,
+        rollingInterval: RollingInterval.Day));
+```
+
+### Outros Sinks
+
+**Serilog** possui ótimo suporte por parte da comunidade. É quase impossível precisar de um Sink que ainda não existe, confira a [lista completa aqui](https://github.com/serilog/serilog/wiki/Provided-Sinks) .
+
 </details>
 
 <details><summary>AppSettings</summary>
