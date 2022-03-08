@@ -6,6 +6,8 @@
 
 > [Deconstruct](./deconstruct/)
 
+> [LINQ - Utilização do Let](./linq-let/README.md)
+
 > [Obsessão por tipos primitivos (primitive obsession)](./primitive-obsession/)
 
 > [Operadores AS e IS](./operators-as-is/)
