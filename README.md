@@ -6,6 +6,8 @@
 
 > [Deconstruct](./deconstruct/)
 
+> [Extension Methods](./extension-methods/README.md)
+
 > [LINQ - Utilização do Let](./linq-let/README.md)
 
 > [Obsessão por tipos primitivos (primitive obsession)](./primitive-obsession/)
