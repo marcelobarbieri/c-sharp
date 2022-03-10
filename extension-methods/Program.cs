@@ -23,8 +23,7 @@ var courses = new List<Course>
     new("Titulo D","Sumario D","Url D",40,DateTime.Now,DateTime.Now,true,true,true,Guid.NewGuid(),Guid.NewGuid(),"Tags D"),
     new("Titulo E","Sumario E","Url E",50,DateTime.Now,DateTime.Now,true,true,true,Guid.NewGuid(),Guid.NewGuid(),"Tags E"),
 };
-courses.Select(x.ToCard());
-
+courses.Select(x => x.ToCard());
 
 foreach (var item in courses)
 {

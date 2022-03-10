@@ -1,6 +1,6 @@
 namespace ExtensionMethods.Entities;
 
-public class CourseCardViewModel
+public class CourseCardViewModel 
 {
     public string Title { get; set; }
     public string Summary { get; set; }
