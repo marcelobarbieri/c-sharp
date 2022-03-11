@@ -8,9 +8,11 @@
 
 > [Deconstruct](./deconstruct/)
 
-> [Extension Methods](./extension-methods/README.md)
+> [Extension Methods](./extension-methods/)
 
-> [LINQ - Utilização do Let](./linq-let/README.md)
+> [Implicit Operators](./implicit-operators/)
+
+> [LINQ - Utilização do Let](./linq-let/)
 
 > [Obsessão por tipos primitivos (primitive obsession)](./primitive-obsession/)
 
@@ -22,7 +24,7 @@
 
 > [String, System.String e String Builder](./string/)
 
-> [TimeZone](./timezone/README.md)
+> [TimeZone](./timezone/)
 
 > [Tuplas](./tuplas/)
 
