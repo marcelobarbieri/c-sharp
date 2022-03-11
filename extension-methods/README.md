@@ -132,3 +132,5 @@ Os métodos de extensão permitem adicionar funcionalidades a qualquer tipo, **b
 # Referências
 
 > [Balta.io](https://balta.io/blog/csharp-extension-methods)
+
+> [Microsoft](https://docs.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)

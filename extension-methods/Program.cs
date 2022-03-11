@@ -23,10 +23,16 @@ var courses = new List<Course>
     new("Titulo D","Sumario D","Url D",40,DateTime.Now,DateTime.Now,true,true,true,Guid.NewGuid(),Guid.NewGuid(),"Tags D"),
     new("Titulo E","Sumario E","Url E",50,DateTime.Now,DateTime.Now,true,true,true,Guid.NewGuid(),Guid.NewGuid(),"Tags E"),
 };
-courses.Select(x => x.ToCard());
 
-foreach (var item in courses)
+foreach (var item in courses.Select(x => x.ToCard()))
 {
-    Console.WriteLine(item);
+    Console.WriteLine(item.ToString());
+
+    //Title: Titulo A | Summary: Sumario A | Url: Url A | Active: True | Tags: Tags A
+    //Title: Titulo B | Summary: Sumario B | Url: Url B | Active: True | Tags: Tags B
+    //Title: Titulo C | Summary: Sumario C | Url: Url C | Active: True | Tags: Tags C
+    //Title: Titulo D | Summary: Sumario D | Url: Url D | Active: True | Tags: Tags D
+    //Title: Titulo E | Summary: Sumario E | Url: Url E | Active: True | Tags: Tags E
 }
 Console.ReadLine();
+

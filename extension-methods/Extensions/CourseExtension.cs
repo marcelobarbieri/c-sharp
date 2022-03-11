@@ -1,8 +1,10 @@
 using ExtensionMethods.Entities;
 
+namespace ExtensionMethods.Extensions;
+
 public static class CourseExtensions
 {
-    public static CourseCardViewModel ToCard(Course course)
+    public static CourseCardViewModel ToCard(this Course course)
     {
         // Gera um novo ViewModel e retorna
 

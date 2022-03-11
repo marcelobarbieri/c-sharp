@@ -8,4 +8,8 @@ public class CourseCardViewModel
     public bool Active { get; set; } = true;
     public string Tags { get; set; }
 
+    public override string ToString()
+    {
+        return $"Title: {Title} | Summary: {Summary} | Url: {Url} | Active: {Active} | Tags: {Tags}";
+    }
 }
