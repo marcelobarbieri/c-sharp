@@ -4,6 +4,8 @@
 
 > [Arquivos CSV (Excel)](./csv/)
 
+> [Arquivos, Manipulação de](./files/)
+
 > [Claims](./claims/)
 
 > [Deconstruct](./deconstruct/)
