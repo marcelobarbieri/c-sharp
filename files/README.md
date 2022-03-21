@@ -28,7 +28,9 @@ try {
 }
 ```
 
-## Criar arquivo
+<details><summary>Criar arquivo</summary>
+
+<br>
 
 **File.Create** cria ou sobrescreve arquivos no disco. Caso não exista, o arquivo será criado. Se já existe, será sobrescrito.
 
@@ -40,7 +42,11 @@ Também, caso não haja permissão para escrita do arquivo no diretório informa
 File.Create(filePath);
 ```
 
-## Adicionar conteúdo a um arquivo
+</details>
+
+<details><summary>Adicionar conteúdo a um arquivo</summary>
+
+<br>
 
 Para adicionar conteúdo (escrever) em um arquivo, pode-se usar os métodos **AppendText** ou **CreateText**.
 
@@ -79,7 +85,11 @@ file.Close();
 
 > IMPORTANTE: Em caso de arquivos grandes recomenda-se a utilização do **StreamWrite** para escrita e **StreamReader** para leitura
 
-## Copiar um arquivo
+</details>
+
+<details><summary>Copiar um arquivo</summary>
+
+<br>
 
 Para copiar um arquivo utiliza-se **File.Copy** com a informação completa do arquivo de origem e destino.
 
@@ -94,7 +104,11 @@ File.Copy(filePath, @"C:\DEV\C#\files\outro.txt")
 File.Copy(filePath, @"C:\DEV\C#\files\outro.txt", overwrite: true);
 ```
 
-## Mover um arquivo
+</details>
+
+<details><summary>Mover um arquivo</summary>
+
+<br>
 
 Para mover um arquivo utiliza-se **File.Move**.
 
@@ -102,7 +116,11 @@ Para mover um arquivo utiliza-se **File.Move**.
 File.Move(filePath,@"C:\DEV\C#\files\outro.txt", overwrite: true);
 ```
 
-## Substituir um arquivo
+</details>
+
+<details><summary>Substituir um arquivo</summary>
+
+<br>
 
 Para substituir um arquivo utiliza-se **File.Replace**.
 
@@ -110,7 +128,11 @@ Para substituir um arquivo utiliza-se **File.Replace**.
 File.Replace(@"C:\DEV\C#\files\outro.txt", filePath, @"C:\DEV\C#\files\backup.txt");
 ```
 
-## Excluir um arquivo
+</details>
+
+<details><summary>Excluir um arquivo</summary>
+
+<br>
 
 Para excluir um arquivo utiliza-se **File.Delete**. Será exibida exceção caso o arquivo não seja encontrado ou não possa ser excluído.
 
@@ -118,7 +140,11 @@ Para excluir um arquivo utiliza-se **File.Delete**. Será exibida exceção caso
 File.Detele(filePath);
 ```
 
-## Verificar se um arquivo existe
+</details>
+
+<details><summary>Verificar se um arquivo existe</summary>
+
+<br>
 
 Para verificar se um arquivo existe utiliza-se **File.Exists** informando o caminho completo do arquivo. Esse método retorna **true** ou **false** para dizer se o arquivo existe ou não.
 
@@ -126,7 +152,11 @@ Para verificar se um arquivo existe utiliza-se **File.Exists** informando o cami
 File.Exists(filePath); // retorna booleano
 ```
 
-## Abertura e leitura de arquivos
+</details>
+
+<details><summary>Abertura e leitura de arquivos</summary>
+
+<br>
 
 ### Lendo arquivos em C#
 
@@ -171,7 +201,11 @@ while ((line = file.ReadLine()) != null)
 file.Close();
 ```
 
-## Obter data de última modificação do arquivo
+</details>
+
+<details><summary>Obter data de última modificação do arquivo</summary>
+
+<br>
 
 **File.GetLastAccessTime** retorna a data e hora do último acesso ao arquivo.
 
@@ -180,7 +214,11 @@ var time = File.GetLastAccessTime(filePath); // retorna DateTime
 Console.WriteLine(time);
 ```
 
-## Obter atributos do arquivo
+</details>
+
+<details><summary> Obter atributos do arquivo</summary>
+
+<br>
 
 **File.GetAttributes** retorna um **enumerador** com os atributos do arquivo
 
@@ -192,6 +230,10 @@ if ((attrs & FileAttributes.ReadOnly) == FileAttributes.ReadOnly)
 if ((attrs & FileAttributes.Compressed) == FileAttributes.Compressed)
     Console.WriteLine("compressed");
 ```
+
+</details>
+
+<br>
 
 ## Conclusão
 
