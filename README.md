@@ -22,6 +22,8 @@
 
 > [Parse](./parse/)
 
+> [Priority Queue](./priority-queue/)
+
 > [Serilog: Criando logs para console, arquivo e banco de dados](./serilog)
 
 > [String, System.String e String Builder](./string/)
