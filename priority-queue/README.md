@@ -134,5 +134,9 @@ Aluno: Spiderman. Prioridade: student
 ```
 
 ## Conclusão
- 
- O C# possui um enorme leque de formar para se trabalhar com listas e filas. É muito comum trabalhar com **List**, **Enumerable** e esquecer-se de outros tipos como o **Priority Queue**. Porém conhecer bem estes tipos pode aumentar ainda mais seu leque de opções.
+
+O C# possui um enorme leque de formar para se trabalhar com listas e filas. É muito comum trabalhar com **List**, **Enumerable** e esquecer-se de outros tipos como o **Priority Queue**. Porém conhecer bem estes tipos pode aumentar ainda mais seu leque de opções.
+
+## Referências
+
+[Balta.io](https://balta.io/blog/csharp-priority-queue)
