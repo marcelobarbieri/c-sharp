@@ -19,6 +19,11 @@ public record Phone(string CountryCode, string Area, string Number)
     public static implicit operator Phone(string phone)
     {
         var data = phone.Split(" ");
-        return new Phone(data[0], data[1], data[2]);
+        return new Phone
+        {
+            CountryCode = data[0],
+            Area = data[1],
+            Number = data[2]
+        };
     }
 }
